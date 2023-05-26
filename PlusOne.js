@@ -1,18 +1,28 @@
 digits = [9];
 // Output: [1,2,4]
 
-let plusOne = function (digits) {
-  let digitString = digits.join("");
-  let addOne = parseInt(digitString) + 1;
+// const plusOne = (digits) => {
+//   //YOUR CODE HERE
+//   let carry = 1;
+//   for (let i = digits.length - 1; i >= 0; i--) {
+//     digits[i] += carry;
+//     if (digits[i] < 10) {
+//       carry = 0;
+//       break;
+//     } else {
+//       digits[i] = 0;
+//     }
+//   }
+//   if (carry) {
+//     digits.unshift(1);
+//   }
+//   return digits;
+// };
 
-  result = addOne.toString().split("");
+// console.log(plusOne(digits));
 
-  output = [];
-  result.forEach((num) => {
-    output.push(parseInt(num));
-  });
-
-  return output;
+var plusOne = function (digits) {
+  return `${BigInt(digits.join("")) + 1n}`.split("");
 };
 
 console.log(plusOne(digits));

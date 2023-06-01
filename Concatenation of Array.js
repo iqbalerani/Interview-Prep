@@ -17,10 +17,12 @@ const nums = [1,3,2,1]
 //     return nums;
 // };
 
-function getConcatenation(nums) {
-    let ans = [];
-        ans = ans.concat(nums, nums);
-    return ans;
-};
+// function getConcatenation(nums) {
+//     let ans = [];
+//         ans = ans.concat(nums, nums);
+//     return ans;
+// };
+
+const getConcatenation = nums => nums.concat(nums)
 
 console.log(getConcatenation(nums));

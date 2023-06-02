@@ -18,7 +18,7 @@ const numIdenticalPairs = function(nums) {
     let counter = 0;
 
     for (let num of nums) {
-        console.log(!map[num], map[num]);!map[num] ? map[num] = 1 : counter+=map[num]++
+        !map[num] ? map[num] = 1 : counter+=map[num]++
     }
     return counter
 };

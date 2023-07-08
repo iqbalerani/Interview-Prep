@@ -24,6 +24,8 @@ let goal = "aa"
 // console.log(s[idx1] === goal[idx2] && s[idx2] === goal[idx1]);
 // console.log(diffIndices);
 
+
+
 if (s === goal) {
     const charCount = new Map();
     for (let char of s) {
